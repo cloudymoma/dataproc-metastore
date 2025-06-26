@@ -39,3 +39,11 @@ FROM
 WHERE
     day = CAST('2025-06-25' AS DATE)
 LIMIT 10;
+
+-- partition exists
+ALTER TABLE target_audience 
+DROP IF EXISTS PARTITION(audience_id=102, day=DATE '2025-06-26');
+
+-- partition does NOT exist
+ALTER TABLE target_audience 
+DROP IF EXISTS PARTITION(audience_id=123, day=DATE '2025-06-22');
