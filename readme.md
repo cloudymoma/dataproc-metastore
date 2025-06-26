@@ -1,6 +1,6 @@
 ### Dataproc managed metastore
 
-for all scripts, you will need to update the `project id`, 'region` etc. all
+for all scripts, you will need to update the `project id`, `region` etc. all
 these information/parameters according to your environment.
 
 `make meta` - create the managed metastore
